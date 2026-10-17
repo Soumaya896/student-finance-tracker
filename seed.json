@@ -1,0 +1,92 @@
+[
+    {
+        "id": "seed-1",
+        "title": "Lunch",
+        "description": "Lunch at school",
+        "amount": 3000,
+        "date": "2026-10-10",
+        "category": "Food",
+        "type": "expense"
+    },
+    {
+        "id": "seed-2",
+        "title": "Transport",
+        "description": "Bus fare",
+        "amount": 1000,
+        "date": "2026-10-11",
+        "category": "Transport",
+        "type": "expense"
+    },
+    {
+        "id": "seed-3",
+        "title": "Allowance",
+        "description": "Weekly allowance",
+        "amount": 20000,
+        "date": "2026-10-12",
+        "category": "Income",
+        "type": "income"
+    },
+    {
+        "id": "seed-4",
+        "title": "Books",
+        "description": "Course materials",
+        "amount": 5000,
+        "date": "2026-10-12",
+        "category": "Education",
+        "type": "expense"
+    },
+    {
+        "id": "seed-5",
+        "title": "Internet",
+        "description": "Mobile data",
+        "amount": 2500,
+        "date": "2026-10-13",
+        "category": "Utilities",
+        "type": "expense"
+    },
+    {
+        "id": "seed-6",
+        "title": "Freelance",
+        "description": "Website project",
+        "amount": 35000,
+        "date": "2026-10-13",
+        "category": "Work",
+        "type": "income"
+    },
+    {
+        "id": "seed-7",
+        "title": "Snacks",
+        "description": "Snacks between classes",
+        "amount": 1500,
+        "date": "2026-10-14",
+        "category": "Food",
+        "type": "expense"
+    },
+    {
+        "id": "seed-8",
+        "title": "Printing",
+        "description": "Assignment printing",
+        "amount": 800,
+        "date": "2026-10-15",
+        "category": "Education",
+        "type": "expense"
+    },
+    {
+        "id": "seed-9",
+        "title": "Haircare",
+        "description": "Hair products",
+        "amount": 6000,
+        "date": "2026-10-16",
+        "category": "Personal",
+        "type": "expense"
+    },
+    {
+        "id": "seed-10",
+        "title": "Gift",
+        "description": "Birthday gift received",
+        "amount": 10000,
+        "date": "2026-10-17",
+        "category": "Income",
+        "type": "income"
+    }
+]

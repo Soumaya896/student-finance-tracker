@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Finance Tracker Tests</title>
+</head>
+<body>
+    <header>
+        <h1>Student Finance Tracker Tests</h1>
+        <p>Basic checks for transaction validation and data handling.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Test Results</h2>
+            <ul id="results" aria-live="polite"></ul>
+        </section>
+    </main>
+
+    <script type="module">
+        import { validateRecord } from "./scripts/validators.js";
+
+        const results = document.getElementById("results");
+
+        function test(name, condition) {
+            const item = document.createElement("li");
+            item.textContent = `${condition ? "PASS" : "FAIL"}: ${name}`;
+            item.style.color = condition ? "green" : "red";
+            results.appendChild(item);
+        }
+
+        const validRecord = {
+            title: "Lunch",
+            description: "Lunch at school",
+            amount: 3000,
+            date: "2026-10-10",
+            category: "Food",
+            type: "expense"
+        };
+
+        test(
+            "A valid transaction passes validation",
+            validateRecord(validRecord).valid
+        );
+
+        test(
+            "An invalid amount is rejected",
+            !validateRecord({ ...validRecord, amount: -10 }).valid
+        );
+
+        test(
+            "An invalid transaction type is rejected",
+            validateRecord({ ...validRecord, type: "other" }).valid === false
+        );
+
+        test(
+           "An empty title is rejected",
+           !validateRecord({ ...validRecord, title: ""}).valid
+        );
+    </script>
+</body>
+</html>

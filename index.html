@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track student income, expenses and budgets in one place.">
+    <meta name="theme-color" content="#173f35">
+    <title>Student Finance Tracker</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="scripts/app.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#home" aria-label="Student Finance Tracker home">
+                <span class="brand-mark" aria-hidden="true">S</span>
+                <span>Student Finance</span>
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#records">Records</a>
+                <a href="#add-record">Add Record</a>
+                <a href="#settings">Settings</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <section id="home">
+            <h1>Take Control of Your Finances</h1>
+            <p>Track your spending, manage your budget and understand your money.</p>
+        </section>
+
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Total transactions: <span id="total-records">0</span></p>
+            <p>Total expenses: <span id="total-spending">RWF 0</span></p>
+            <p>Top category: <span id="top-category">None</span></p>
+            <p id="budget-status" role="status" aria-live="polite"></p>
+            <div id="spending-trend" aria-label="Seven-day spending chart"></div>
+        </section>
+        <section id="records">
+            <h2>Transaction Records</h2>
+
+            <label for="search-input">Search using a regular expression</label>
+            <input id="search-input" type="search" placeholder="food|transport">
+            <label for="case-sensitive">Case-sensitive search</label>
+            <input id="case-sensitive" type="checkbox">
+            <p id="search-error" role="alert"></p>
+
+            <label for="sort-by">Sort by</label>
+            <select id="sort-by">
+                <option value="date-desc">Newest first</option>
+                <option value="date-asc">Oldest first</option>
+                <option value="title-asc">Title A-Z</option>
+                <option value="title-desc">Title Z-A</option>
+                <option value="amount-asc">Amount low to high</option>
+                <option value="amount-desc">Amount high to low</option>
+            </select>
+        <div class="table-wrapper">
+            <table>
+                <caption>All transactions</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="records-list"></tbody>
+            </table>
+        </div>
+            <p id="records-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="add-record">
+            <h2 id="form-title">Add a Transaction</h2>
+
+            <form id="record-form" novalidate>
+                <input id="record-id" type="hidden">
+
+                <label for="title">Title</label>
+                <input id="title" name="title" maxlength="80" required>
+                <small id="title-error"></small>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description"
+                    maxlength="250" required></textarea>
+                <small id="description-error"></small>
+
+                <label for="amount">Amount (RWF)</label>
+                <input id="amount" name="amount" type="number"
+                    min="0.01" step="0.01" required>
+                <small id="amount-error"></small>
+
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required>
+                <small id="date-error"></small>
+
+                <label for="category">Category</label>
+                <input id="category" name="category" maxlength="50" required>
+                <small id="category-error"></small>
+
+                <label for="transaction-type">Transaction type</label>
+                <select id="transaction-type" name="transaction-type">
+                    <option value="expense">Expense</option>
+                    <option value="income">Income</option>
+                </select>
+
+                <button type="submit" id="save-record">Save Transaction</button>
+                <button type="button" id="cancel-edit" hidden>Cancel Edit</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section id="settings">
+            <h2>Settings and Backups</h2>
+
+            <label for="currency">Display currency</label>
+            <select id="currency">
+                <option value="RWF">Rwandan Franc (RWF)</option>
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+            </select>
+
+            <label for="usd-rate">RWF per USD</label>
+            <input id="usd-rate" type="number" min="0.01"
+                step="0.01" value="1400">
+
+            <label for="eur-rate">RWF per EUR</label>
+            <input id="eur-rate" type="number" min="0.01"
+                step="0.01" value="1600">
+
+            <label for="budget-limit">Budget limit (RWF)</label>
+            <input id="budget-limit" type="number" min="0"
+                step="1" value="100000">
+
+            <button type="button" id="save-settings">Save settings</button>
+            <button type="button" id="export-data">Export JSON</button>
+
+            <label for="import-file">Import JSON backup</label>
+            <input id="import-file" type="file" accept=".json,application/json">
+
+            <p id="settings-status" role="status" aria-live="polite"></p>
+            <p id="import-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>A student-friendly tool for managing income, expenses and budgets.</p>
+            <p>Github: <a href="https://github.com/Soumaya896/student-finance-tracker">Project repository</a></p>
+            <p>Email: <a href="mailto:t.soumaya@alustudent.com">Contact the developer</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Student Finance Tracker . Built for student life.</p>
+    </footer>
+</body>
+</html>
