@@ -3,7 +3,7 @@
 **Live Demo:**[https://soumaya896.github.io/student-finance-tracker/](https://soumaya896.github.io/student-finance-tracker/)
 
 **Demo Video:** https://drive.google.com/file/d/1zzNGoECEoWGJIqeQCUprrbJ_OyCGHxAI/view?usp=sharing
-** Theme:** Modern clean financial dashboard 
+**Theme:** Modern clean financial dashboard 
 
 A responsive web application for students to record income and expenses, manage budgets and track spending.
 

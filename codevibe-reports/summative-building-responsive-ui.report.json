@@ -2,7 +2,7 @@
   "reportVersion": "1.0",
   "assignmentId": "assignment-1792321176805-zvlbh1c",
   "assignmentName": "Summative - Building Responsive UI",
-  "generatedAt": 1792353205851,
+  "generatedAt": 1792321500482,
   "metrics": {
     "assignmentId": "assignment-1792321176805-zvlbh1c",
     "authorship": {
@@ -19,7 +19,7 @@
       "filesReviewed": 3,
       "filesUnreviewed": 0,
       "unreviewedLines": 0,
-      "averageReviewTimeMs": 806002.3333333334
+      "averageReviewTimeMs": 377475.3333333333
     },
     "violations": [
       {
@@ -46,8 +46,8 @@
           "durationSeconds": 301965
         },
         "firstDetectedAt": 1792317165301,
-        "lastDetectedAt": 1792353036456,
-        "count": 4
+        "lastDetectedAt": 1792317165301,
+        "count": 1
       }
     ],
     "rawEvents": [
@@ -1095,226 +1095,9 @@
         "source": "ai",
         "detectionMethod": "external-file-change",
         "confidence": "high"
-      },
-      {
-        "id": 50,
-        "timestamp": 1792322540734,
-        "tool": "ai",
-        "eventType": "code-generated",
-        "linesOfCode": 2,
-        "linesRemoved": 0,
-        "linesChanged": 2,
-        "charactersCount": 3884,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "source": "external-file-change",
-          "detectionMethod": "external-file-change",
-          "confidence": "high",
-          "isAgentMode": true,
-          "isAgentGenerated": true
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": true,
-        "source": "ai",
-        "detectionMethod": "external-file-change",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c",
-        "aiClassification": "prohibited",
-        "policyViolation": "agentic-use"
-      },
-      {
-        "id": 51,
-        "timestamp": 1792344857643,
-        "tool": "claude-code",
-        "eventType": "code-generated",
-        "linesOfCode": 1,
-        "charactersCount": 8,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "manual": true,
-          "source": "manual-typing",
-          "duration": 6207
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": false,
-        "source": "manual",
-        "detectionMethod": "manual-typing",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c"
-      },
-      {
-        "id": 52,
-        "timestamp": 1792344871268,
-        "tool": "claude-code",
-        "eventType": "code-generated",
-        "linesOfCode": 1,
-        "charactersCount": 18,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "manual": true,
-          "source": "manual-typing",
-          "duration": 7489
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": false,
-        "source": "manual",
-        "detectionMethod": "manual-typing",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c"
-      },
-      {
-        "id": 53,
-        "timestamp": 1792353036456,
-        "tool": "claude-code",
-        "eventType": "code-generated",
-        "linesOfCode": 1,
-        "charactersCount": 1,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "manual": true,
-          "source": "manual-typing",
-          "duration": 2002
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": false,
-        "source": "manual",
-        "detectionMethod": "manual-typing",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c"
-      },
-      {
-        "id": 54,
-        "timestamp": 1792353038481,
-        "tool": "claude-code",
-        "eventType": "code-generated",
-        "linesOfCode": 1,
-        "charactersCount": 1,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "manual": true,
-          "source": "manual-typing",
-          "duration": 2003
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": false,
-        "source": "manual",
-        "detectionMethod": "manual-typing",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c"
-      },
-      {
-        "id": 55,
-        "timestamp": 1792353068314,
-        "tool": "claude-code",
-        "eventType": "code-generated",
-        "linesOfCode": 1,
-        "charactersCount": 9,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "manual": true,
-          "source": "manual-typing",
-          "duration": 6443
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": false,
-        "source": "manual",
-        "detectionMethod": "manual-typing",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c"
-      },
-      {
-        "id": 56,
-        "timestamp": 1792353070814,
-        "tool": "claude-code",
-        "eventType": "code-generated",
-        "linesOfCode": 1,
-        "charactersCount": 1,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "manual": true,
-          "source": "manual-typing",
-          "duration": 2006
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": false,
-        "source": "manual",
-        "detectionMethod": "manual-typing",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c"
-      },
-      {
-        "id": 57,
-        "timestamp": 1792353125091,
-        "tool": "ai",
-        "eventType": "code-generated",
-        "linesOfCode": 1,
-        "linesRemoved": 0,
-        "linesChanged": 1,
-        "charactersCount": 4029,
-        "filePath": "c:/student-finance-tracker/README.md",
-        "language": "markdown",
-        "metadata": {
-          "source": "external-file-change",
-          "detectionMethod": "external-file-change",
-          "confidence": "high",
-          "isAgentMode": true,
-          "isAgentGenerated": true
-        },
-        "reviewQuality": null,
-        "isReviewed": false,
-        "isAgentMode": true,
-        "source": "ai",
-        "detectionMethod": "external-file-change",
-        "confidence": "high",
-        "assignmentId": "assignment-1792321176805-zvlbh1c",
-        "aiClassification": "prohibited",
-        "policyViolation": "agentic-use"
       }
     ],
     "fileReviews": [
-      {
-        "filePath": "c:/student-finance-tracker/README.md",
-        "date": "2026-10-18",
-        "tool": "ai",
-        "reviewQuality": "thorough",
-        "reviewScore": 100,
-        "isReviewed": true,
-        "linesGenerated": 3,
-        "linesChanged": 3,
-        "linesSinceReview": 0,
-        "linesAdded": 1,
-        "linesRemoved": 0,
-        "charactersCount": 7913,
-        "agentSessionId": "manual-session",
-        "isAgentGenerated": true,
-        "wasFileOpen": false,
-        "firstGeneratedAt": 1792322540734,
-        "lastReviewedAt": 1792353198230,
-        "totalReviewTime": 29975485,
-        "language": "markdown",
-        "modificationCount": 2,
-        "totalTimeInFocus": 29975485,
-        "scrollEventCount": 1,
-        "cursorMovementCount": 0,
-        "editsMade": false,
-        "lastOpenedAt": 1792353008438,
-        "reviewSessionsCount": 0,
-        "reviewedInTerminal": false
-      },
       {
         "filePath": "c:/student-finance-tracker/index.html",
         "date": "2026-10-18",
@@ -1332,15 +1115,14 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792318083581,
-        "lastReviewedAt": 1792353198226,
-        "totalReviewTime": 1784235,
+        "totalReviewTime": 498654,
         "language": "html",
         "modificationCount": 2,
-        "totalTimeInFocus": 1785682,
-        "scrollEventCount": 1,
-        "cursorMovementCount": 1,
+        "totalTimeInFocus": 1784220,
+        "scrollEventCount": 0,
+        "cursorMovementCount": 0,
         "editsMade": false,
-        "lastOpenedAt": 1792322785767,
+        "lastOpenedAt": 1792319467882,
         "reviewSessionsCount": 0,
         "reviewedInTerminal": false
       },
@@ -1361,7 +1143,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792318695809,
-        "lastReviewedAt": 1792353198229,
+        "lastReviewedAt": 1792321498729,
         "totalReviewTime": 170408,
         "language": "javascript",
         "modificationCount": 1,
@@ -1390,7 +1172,7 @@
         "isAgentGenerated": true,
         "wasFileOpen": false,
         "firstGeneratedAt": 1792318552572,
-        "lastReviewedAt": 1792353198227,
+        "lastReviewedAt": 1792321498728,
         "totalReviewTime": 463364,
         "language": "html",
         "modificationCount": 1,
@@ -1408,21 +1190,6 @@
         "startTime": 1792015200000,
         "endTime": 1792317165301,
         "durationSeconds": 301965
-      },
-      {
-        "startTime": 1792319890761,
-        "endTime": 1792322540734,
-        "durationSeconds": 2649
-      },
-      {
-        "startTime": 1792322540734,
-        "endTime": 1792344857643,
-        "durationSeconds": 22316
-      },
-      {
-        "startTime": 1792344871268,
-        "endTime": 1792353036456,
-        "durationSeconds": 8165
       }
     ]
   },
@@ -1514,9 +1281,9 @@
   ],
   "studentIdentifier": "t.soumaya@alustudent.com",
   "repoUrl": "[https://github.com/Soumaya896/student-finance-tracker](https://github.com/Soumaya896/student-finance-tracker)",
-  "repoHeadCommit": "e5ee0e798164d826201365b9bd1dd9335d4542ef",
+  "repoHeadCommit": "e7168fbe94fe55cbf6cd38653f0cc4fd561c92d9",
   "integrity": {
     "algorithm": "sha256",
-    "hash": "ef410d5a387c09c0c7d58f4d95a2c1911535f6e383359b7c4f7e84231de1563d"
+    "hash": "84546f6102ccbbcb9dae99bddb664847a7b73b43ba198a6e709ccc2d67bd3b03"
   }
 }
