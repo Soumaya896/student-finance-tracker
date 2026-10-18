@@ -1,8 +1,10 @@
+<!-- Project Name: Student Finance tracker -->
 # Student Finance Tracker
 
 **Live Demo:**[https://soumaya896.github.io/student-finance-tracker/](https://soumaya896.github.io/student-finance-tracker/)
 
-**Demo Video:** https://drive.google.com/file/d/1zzNGoECEoWGJIqeQCUprrbJ_OyCGHxAI/view?usp=sharing
+**Demo Video:** https://drive.google.com/file/d/17xXv0hhJ-MwLdrKCYKAXhYFzgA8HV-b5/view?usp=sharing
+
 **Theme:** Modern clean financial dashboard 
 
 A responsive web application for students to record income and expenses, manage budgets and track spending.
