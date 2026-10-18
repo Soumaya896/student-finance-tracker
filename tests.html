@@ -23,7 +23,7 @@
 
         const results = document.getElementById("results");
 
-        // Helper function to render test pass/fail status
+        // This is to check the fail status
         function test(name, condition) {
             const item = document.createElement("li");
             item.textContent = `${condition ? "PASS" : "FAIL"}: ${name}`;
@@ -40,7 +40,7 @@
             type: "expense"
         };
 
-        // Run validation test suite
+        // This is to run a validation test
         test(
             "A valid transaction passes validation",
             validateRecord(validRecord).valid
