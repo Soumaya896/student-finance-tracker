@@ -2,6 +2,8 @@
 
 **Live Demo:**[https://soumaya896.github.io/student-finance-tracker/](https://soumaya896.github.io/student-finance-tracker/)
 
+** Theme: ** Modern clean financial dashboard 
+
 A responsive web application for students to record income and expenses, manage budgets and track spending.
 
 ## Features
@@ -44,9 +46,7 @@ A responsive web application for students to record income and expenses, manage 
 
 1. Open the project folder in VS Code.
 2. Start a local server from the terminal:
-
    `python -m http.server 8000`
-
 3. Open `http://localhost:8000` in your browser.
 4. To run the validation tests, open `http://localhost:8000/tests.html`.
 
