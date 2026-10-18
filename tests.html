@@ -23,6 +23,7 @@
 
         const results = document.getElementById("results");
 
+        // Helper function to render test pass/fail status
         function test(name, condition) {
             const item = document.createElement("li");
             item.textContent = `${condition ? "PASS" : "FAIL"}: ${name}`;
@@ -39,6 +40,7 @@
             type: "expense"
         };
 
+        // Run validation test suite
         test(
             "A valid transaction passes validation",
             validateRecord(validRecord).valid
@@ -55,8 +57,8 @@
         );
 
         test(
-           "An empty title is rejected",
-           !validateRecord({ ...validRecord, title: ""}).valid
+            "An empty title is rejected",
+            !validateRecord({ ...validRecord, title: ""}).valid
         );
     </script>
 </body>

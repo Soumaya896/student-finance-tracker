@@ -1,4 +1,6 @@
 import { highlightText } from "./search.js";
+
+// Render and filter transaction records table
 function renderRecords(records, query = "", caseSensitive = false, formatMoney) {
     const list = document.getElementById("records-list");
     list.replaceChildren();
